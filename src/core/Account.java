@@ -1,7 +1,7 @@
 package core;
 
 public class Account {
-	
+	//Pavel is Pavel
 	private int id;
 	private float balance;
 
