@@ -74,8 +74,8 @@ public class Client {
 
 		for (int i = 0; i < accounts.length; i++) {
 			if (accounts[i] != null && accounts[i].getId() == id) {
-				setBalance(accounts[i].getBalance());
-				accounts[i] = null; // add the account
+				setBalance(getBalance()+accounts[i].getBalance());
+				accounts[i] = null; // remove the account
 				// log the operation
 				Log log = new Log(System.currentTimeMillis(), this.id, "remove account", this.getBalance());
 				logger.log(log);
