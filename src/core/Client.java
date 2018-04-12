@@ -50,7 +50,7 @@ public class Client {
 
 	public Account getAccounts(int index) {
 		for (int i = 0; i < accounts.length; i++) {
-			if (i == index) {
+			if (i == index && accounts[i]!=null ) {
 				return accounts[i];
 			}
 		}
