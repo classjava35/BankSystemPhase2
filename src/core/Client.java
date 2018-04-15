@@ -92,7 +92,7 @@ public class Client {
 	}
 
 	public void withdraw(float amount) {
-		setBalance(getBalance()+(amount - (amount * commissionRate)));
+		setBalance(getBalance()-(amount - (amount * commissionRate)));
 		Log log = new Log(System.currentTimeMillis(), getId(), "withdraw money + commissionRate ", amount);
 		logger.log(log);
 	}
